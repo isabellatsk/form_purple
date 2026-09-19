@@ -1,0 +1,130 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(161, 143, 143);
+    padding: 0;
+    margin: 0;
+}
+#formulario{
+    display: flex;         
+    justify-content: space-around; 
+    align-items: center;  
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/violet-fund.jpg);
+    background-size: 100% 100%;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.box-form{
+    background-color: rgba(0, 0, 0, 0.585);
+    backdrop-filter: blur(10px); 
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.img-form{
+    width: 60%;
+    height: 100%;
+}
+.img-form img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px; 
+}
+form{
+    padding: 50px;
+    text-align: left;
+    width: 50%;
+    color: aliceblue;
+}
+form input,
+form select {
+    border: 0.5px solid  rgb(146, 146, 146);
+    border-radius: 10px;
+    outline: 0;
+    width: 100%;
+    margin-bottom: 15px; 
+    padding: 10px;
+    box-sizing: border-box; 
+}
+.btn-form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.btn-form input[type="submit"],
+.btn-form input[type="reset"] {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.288);
+    border: none;
+    background-color: blueviolet;
+    color: aliceblue;
+    text-transform: uppercase;
+    border-radius: 15px;
+    width: 47%; 
+}
+.btn-form input[type="submit"]:hover,
+.btn-form input[type="reset"]:hover{
+    background-color: rgb(104, 33, 170);
+}
+/*
+@media (max-width: 375px) {
+    .box-form {
+        width: 100%;
+    }
+}
+@media (max-width: 532px) {
+    .box-form {
+        width: 70%;
+    }
+}*/
+@media (max-width: 660px) {
+    .img-form {
+        display: none;
+    }
+    .box-form {
+        width: 60%;
+    }
+    form {
+        width: 100%;
+    }
+}
+@media (max-width: 700px) {
+    form {
+        padding: 50px 30px 0px 30px;
+    }
+}
+/*
+@media (max-width: 984px) {
+    .box-form {
+        width: 90%;
+    }
+}*/
+@media (max-width: 1176px) {
+    .box-form {
+        width: 70%;
+    }
+}
+@media (min-width: 1176px) and (max-width: 1537px) {
+    .box-form {
+        width: 50%;
+    }
+}
+@media (min-width: 1537px) {
+    .box-form {
+        width: 45%;
+    }
+}
+@media (min-width: 1748px) {
+    .box-form {
+        width: 40%;
+    }
+}
+@media (min-width: 2135px) {
+    .box-form {
+        width: 40%;
+    }
+}

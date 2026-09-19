@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="formulario">
+        <div class="box-form">
+            <div class="img-form">
+                <img src="img/img-formm.jpg" alt="">
+            </div>
+            <form action="resultado.html" name="pedido" method="post" autocomplete="on" target="_self" enctype="">
+                    <input type="text" name="Nome" placeholder="Nome" size="20">
+                    <input type="text" name="Endereco" placeholder="Endereço" size="20">
+                    <input type="password" name="Senha" placeholder="Senha" size="20">
+    
+                    Estado Civil:
+                    <select name="EstadoCivil">
+                        <option value="1">Solteiro</option>
+                        <option value="2">Casado</option>
+                    </select>
+                    
+                    Sexo:
+                    <select name="Sexualidade">
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                    </select>
+                    
+                    Profissão:
+                    <select name="profissao">
+                        <option value="1">Desenvolvedor</option>
+                        <option value="2">Designer</option>
+                        <option value="3">Médico</option>
+                        <option value="4">Professor</option>
+                        <option value="5">Outros</option>
+                    </select>
+                    <div class="btn-form">
+                        <input type="submit" name="Enviar" value="Enviar">
+                        <input type="reset" name="Limpar" value="Limpar">
+                    </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
